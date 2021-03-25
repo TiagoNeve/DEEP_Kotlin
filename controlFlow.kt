@@ -6,7 +6,8 @@ fun main() {
     //while01()
     //continue01()
     //array()
-    forLoops()
+    //forLoops()
+    desafio()
 }
 
 fun if01() {
@@ -20,7 +21,6 @@ fun if01() {
     }
     // É possível ter muitas verificações, basta colocar um else if (condition)
 }
-
 fun con01() {
     // Expressões condicionais, é o ato de você utilizar um if e guardar o resultado numa variável
     // val validado = if (conta == conta && password == password) retorna true ou false
@@ -39,7 +39,6 @@ fun con01() {
     }
     println(result)
 }
-
 fun while01() {
     var i = 1
 
@@ -57,7 +56,6 @@ fun while01() {
     }
     println(soma)
 }
-
 fun continue01() {
     var soma = 0
     var i = 1
@@ -70,7 +68,6 @@ fun continue01() {
     }
     println(soma)
 }
-
 fun array() {
     var contacts = arrayOf("Tiago", "Maciel", "Neves")
     var x = arrayOf(1,2,3,4)
@@ -81,7 +78,6 @@ fun array() {
     contacts[2] = "Lindão"
     println(contacts[2])
 }
-
 fun forLoops() {
     val nums = arrayOf(2,4,6)
     for (x in nums) { // Mostra todos os itens de um array
@@ -93,4 +89,22 @@ fun forLoops() {
         soma += num
     }
     println(soma)
+}
+
+fun desafio() {
+
+    var hours = readLine()!!.toInt()
+    var total: Double = 0.0
+
+    val result: Double = when {
+        hours <= 5 -> hours.toDouble()
+        hours in 6..23 -> 5+((hours - 5)*0.5)
+        hours >= 24 -> 15+((hours-24)*0.5)
+        hours >= 48 -> 2*15+((hours-48)*0.5)
+        hours >= 72 -> 3*15+((hours-72)*0.5)
+        hours >= 96 -> 4*15+((hours-96)*0.5)
+        else -> 0.0
+    }
+    total += result
+    println(total)
 }
