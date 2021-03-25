@@ -4,7 +4,8 @@ fun main() {
     //if01()
     //con01()
     //while01()
-    continue01()
+    //continue01()
+    array()
 }
 
 fun if01() {
@@ -67,4 +68,15 @@ fun continue01() {
         soma += 1
     }
     println(soma)
+}
+
+fun array() {
+    var contacts = arrayOf("Tiago", "Maciel", "Neves")
+    var x = arrayOf(1,2,3,4)
+
+    // É possível acessar uma posição do arrya utilizando o index [0], se quiser alterar o valor
+    // de um index específico basta selecionar ele e atribuir o valor desejado
+    println(contacts[2])
+    contacts[2] = "Lindão"
+    println(contacts[2])
 }
