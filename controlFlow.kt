@@ -2,7 +2,8 @@ package com.example.teste
 
 fun main() {
     //if01()
-    con01()
+    //con01()
+    while01()
 }
 
 fun if01() {
@@ -34,6 +35,22 @@ fun con01() {
         else -> "Zero"
     }
     println(result)
+}
 
+fun while01() {
+    var i = 1
 
+    while (i <= 5) {
+        println(i)
+        i++
+    }
+
+    var soma = 0
+    var i2 = 1
+
+    while(i2 <= 100) {
+        soma += i2
+        i2++
+    }
+    println(soma)
 }
