@@ -35,6 +35,14 @@ fun operadores() {
     //a variável vai retornar o valor e depois modificar
 
     // Operadores de comparações
+    /*
+    * > Maior que
+    * < Menor que
+    * >= Maior ou igual
+    * <= Menor ou igual
+    * == Igual a
+    * != Diferente de
+    * */
     val age = 21
     println(age >= 18)
 }
