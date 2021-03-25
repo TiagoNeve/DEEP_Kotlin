@@ -5,7 +5,8 @@ fun main() {
     //con01()
     //while01()
     //continue01()
-    array()
+    //array()
+    forLoops()
 }
 
 fun if01() {
@@ -79,4 +80,17 @@ fun array() {
     println(contacts[2])
     contacts[2] = "Lindão"
     println(contacts[2])
+}
+
+fun forLoops() {
+    val nums = arrayOf(2,4,6)
+    for (x in nums) { // Mostra todos os itens de um array
+        println(x)
+    }
+
+    var soma = 0
+    for (num in nums) { // Soma de todos os números do array
+        soma += num
+    }
+    println(soma)
 }
