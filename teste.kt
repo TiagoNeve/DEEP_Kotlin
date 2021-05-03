@@ -21,21 +21,23 @@
 // Pessoa.kt 
 // A classe pessoa precisa ser aberta e suas propriedades também
 // Pois será utilizada por outras classes.
-open class Pessoa(
-  open val nome: String,
-  open val cpf: String
+abstract class Pessoa(
+  val nome: String,
+  val cpf: String
 );
 // Constructor primário de classes
 
 
 // Entendendo sobre Abstrações na Prática - Parte 1
 // Funcionario.kt 
-class Funcionario(
-  override val nome: String,
-  override val cpf: String,
+abstract class Funcionario(
+  nome: String,
+  cpf: String,
   val salario: Float
 ) : Pessoa(nome, cpf) {
+  abstract fun calculoAuxilio(): Float {
 
+  }
 }
 
 /*
@@ -46,3 +48,14 @@ class Funcionario(
   override.
 */
 
+// Entendendo sobre abstrações na prática - Parte 2
+
+/*
+  Nessa aula ocorre uma refatoração da classe pessoa
+  em que ela deixa de ser uma classe normal e se torna uma 
+  classe abstrata com o uso da palavra chave abstract.
+
+  Também transformar a classe Funcionario em abstrata pois ela 
+  não é o funcionario final, apenas a ideia de funcionário, podendo
+  ter vários tipos de funcionários.
+*/
