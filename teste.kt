@@ -18,3 +18,30 @@
   atributos da classe pai.
 */
 
+// Pessoa.kt 
+// A classe pessoa precisa ser aberta e suas propriedades também
+// Pois será utilizada por outras classes.
+open class Pessoa(
+  open val nome: String,
+  open val cpf: String
+);
+// Constructor primário de classes
+
+
+// Entendendo sobre Abstrações na Prática - Parte 1
+// Funcionario.kt 
+class Funcionario(
+  override val nome: String,
+  override val cpf: String,
+  val salario: Float
+) : Pessoa(nome, cpf) {
+
+}
+
+/*
+  Nesta aula foi ensiando o conceito de heranças em Kotlin, utilizando
+  o conceito de abstração. Para fazer uma classe poder herdar é necessário
+  que ela seja aberta e seus atributos modificáveis também, para que dessa
+  forma seus atributos possam ser sobreescritos com o uso da palavra chave
+  override.
+*/
