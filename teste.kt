@@ -45,3 +45,4 @@ class Funcionario(
   forma seus atributos possam ser sobreescritos com o uso da palavra chave
   override.
 */
+
