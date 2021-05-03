@@ -1,3 +1,3 @@
-// Fundamentos de orientação a objetos em Kotlin - Digital Innovation One
+// Fundamentos de orientação a objetos em Kotlin - 
 
-// Introdução a abstrações 
+// Introdução a abstrações
