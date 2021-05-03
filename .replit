@@ -1,0 +1,2 @@
+language = "kotlin"
+run = "kotlinc teste.kt -include-runtime -d teste.jar && java -jar teste.kt"
