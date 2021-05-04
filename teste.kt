@@ -77,3 +77,12 @@ class Analista(nome: String, cpf: String, salario: Double) : Funcionario(nome, c
   override fun calculoAuxilio() = salario * 0.1
 
 }
+
+// Introdução ao polimorfismo 
+
+/*
+  Conceito de separar bem as funções em classes específicas
+  e herdar essas funções em outras classes, assim uma única
+  classe pode herdar diversas outras e gerar um polimorfismo de classes
+  gerando novas classes com novas funcionalidades herdadas.
+*/
