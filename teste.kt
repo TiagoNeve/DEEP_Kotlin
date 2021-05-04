@@ -27,3 +27,13 @@
   que é possível utilizar funcionalidades inerentes ao sitema operacional
   que está no celular, basta chama-las no seu programa.
 */
+
+// Atualizações dinâmicas do sistema (DSU)
+/*
+  DSU são atualizações rotineiras do sistema, denominada de GSI, essa 
+  GSI é o sistema em si. Todo aparelho android possui o GSI pois esse é o 
+  android propriamente dito, porém é necessário atualiza-lo, 
+  essa atualização é chamada de DSU.
+
+  Exercicio final -> Ler a documentação do DSU. 
+*/
