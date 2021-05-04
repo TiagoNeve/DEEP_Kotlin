@@ -33,11 +33,18 @@ abstract class Pessoa(
 abstract class Funcionario(
   nome: String,
   cpf: String,
-  val salario: Float
+  val salario: Double
 ) : Pessoa(nome, cpf) {
-  abstract fun calculoAuxilio(): Float {
+  protected abstract fun calculoAuxilio(): Double;
 
-  }
+  fun toString(): String = """
+  Nome: $nome
+  Cpf: $cpf
+  Salario: $salario
+  Auxilio: ${calculoAuxilio()}
+  """.trimIndent();
+
+  // Protected -> Informa que somente as heranças poderão utilizar o método
 }
 
 /*
@@ -59,3 +66,14 @@ abstract class Funcionario(
   não é o funcionario final, apenas a ideia de funcionário, podendo
   ter vários tipos de funcionários.
 */
+
+// Entendendo sobre abstrações na prática - Parte 3
+
+/*
+  Conceitos mais profundos sobre abstrações.
+*/
+
+class Analista(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
+  override fun calculoAuxilio() = salario * 0.1
+
+}
