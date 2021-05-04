@@ -54,5 +54,14 @@
   Manter os serviços e as dependências atualizadas -> Sempre verificar se 
   as dependências estão em ordem e atualizadas, para evitar problemas 
   desnecessários.
+
+*/
+
+// Segurança com HTTPS, SSL, SafetyNet
+/*
+  Trabalhe com dados de forma segura.
+  Configurações de segurança de redes. 
+  SafetyNet -> Lib para verificar se os serviços estão executando com 
+  segurança.
   
 */
