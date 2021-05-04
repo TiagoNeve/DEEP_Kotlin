@@ -16,3 +16,14 @@
   Junto dessa camada há o android runtime.
 
 */
+
+//Diagrama da arquitetura parte 2
+/*
+  JAVA api runtime -> Camada em que é armazenado os códigos em java,
+  capazes de se comunicar com o hardware da máquina. É a camada em que 
+  os programadores geralmente mechem.
+
+  System Apps -> Camada essencial para o desenvolvimento, é nessa camada 
+  que é possível utilizar funcionalidades inerentes ao sitema operacional
+  que está no celular, basta chama-las no seu programa.
+*/
