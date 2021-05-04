@@ -37,3 +37,22 @@
 
   Exercicio final -> Ler a documentação do DSU. 
 */
+
+// Segurança do Sistema 
+
+// Práticas de recomendadas e dicas de segurança
+/*
+  Aplicar comunicação segura -> Ato de ter o controle do fluxo de informação
+  do seu APP.
+
+  Oferecer as permissões corretas -> Definir o limite de permissões e de 
+  acesso ao sistema, evitando sobrecarregar e gerar bugs.
+
+  Armazenar os dados de forma segura -> Para que os usuários se sintam
+  seguros a utilizar o nosso APP 
+
+  Manter os serviços e as dependências atualizadas -> Sempre verificar se 
+  as dependências estão em ordem e atualizadas, para evitar problemas 
+  desnecessários.
+  
+*/
